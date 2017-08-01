@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cric1"
+    tools:context="com.example.aditi.champleague.Main2Activity">
+
+    <TextView
+        android:id="@+id/Details"
+        android:text="Match Details"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Details"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Player 1"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:paddingRight="5dp"
+                android:textColor="#000"
+                android:background="#FFF"
+                android:fontFamily="casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edittext1"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:hint="eg. Sachin"
+                android:background="@drawable/rectangle"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFF"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Player 2"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:paddingRight="5dp"
+            android:textColor="#000"
+            android:background="#FFF"
+            android:fontFamily="casual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edittext2"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:hint="eg. Sachin"
+            android:background="@drawable/rectangle"
+            />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="55dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Overs"
+                android:textSize="35dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textAlignment="center"
+                android:layout_marginLeft="25dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/overs"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:text="TOSS"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/round"
+                android:textSize="30dp"
+                android:onClick="toss"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

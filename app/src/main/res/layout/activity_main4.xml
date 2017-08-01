@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aditi.champleague.Main4Activity">
+
+
+
+    <TextView
+        android:text="TIE MATCH"
+        android:textSize="55dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:padding="40dp"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT GAME"
+        android:layout_gravity="end"
+        android:layout_margin="40dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp"/>
+
+
+</LinearLayout>
